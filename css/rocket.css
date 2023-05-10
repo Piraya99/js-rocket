@@ -1,19 +1,19 @@
-.left {
+.left{
   background-color: aquamarine;
   position: fixed;
   width: 50%;
   height: 100%;
-  top: 0;
-  left: 0;
+  top:0;
+  left:0;
 }
 
-.right {
+.right{
   background-color: aliceblue;
   position: fixed;
   width: 50%;
   height: 100%;
-  top: 0;
-  right: 0;
+  top:0;
+  right:0;
 }
 
 .ground {
@@ -32,15 +32,15 @@
   width: 20px;
   height: 100px;
   background-color: blue;
-  transition: bottom 10000ms;
+  transition: bottom 1000ms;
 }
 
-body.body-state1 .rocket {
+body.body-state1 .rocket{
   transition: none;
 }
 
 body.body-state3 .rocket,
-body.body-state4 .rocket {
+body.body-state4 .rocket  {
   bottom: 1000px;
 }
 
@@ -48,20 +48,22 @@ body.body-state4 .rocket {
 .state2,
 .state3,
 .state4,
-.state5 {
+.state5{
   display: none;
 }
 
-body.body-state1 .state1{display: block;}
-body.body-state2 .state2{display: block;}
-body.body-state3 .state3{display: block;}
-body.body-state4 .state4{display: block;}
-body.body-state5 .state5{display: block;}
 
-a {
+body.body-state1 .state1 {display: block;}
+body.body-state2 .state2 {display: block;}
+body.body-state3 .state3 {display: block;}
+body.body-state4 .state4 {display: block;}
+body.body-state5 .state5 {display: block;}
+
+
+a{
 
 }
 
-a.button {
+a.button{
 
 }
