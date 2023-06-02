@@ -17,26 +17,46 @@
 }
 
 .ground {
-  background-color: green;
   position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 20px;
+  left: 50%;
+  bottom: 20px;
+  width: 400px;
+  height: 92px;
+  margin-left: -200px;
+  background: url('../img/ground.png') no-repeat 0 0;
 }
 
 .rocket {
   position: absolute;
   left: 50%;
-  bottom: 20px;
-  width: 20px;
-  height: 100px;
-  background-color: blue;
+  bottom: 0px;
+  width: 348px;
+  height: 360px;
+  margin-left: -100px;
+  background: url('../img/rocket-state1.png') no-repeat 0 0;
   transition: bottom 1000ms;
 }
 
 body.body-state1 .rocket{
   transition: none;
+}
+
+/* rocket bg image */
+
+body.body-state2 .rocket {
+  bottom: 80px;
+  background-image: url('../img/rocket-state2.png');
+}
+
+body.body-state3 .rocket,
+body.body-state4 .rocket {
+  background-image: url('../img/rocket-state3.png');
+}
+
+body.body-state5 .rocket {
+  bottom: 120px;
+  margin-left: -174px;
+  background-image: url('../img/boom.png');
 }
 
 body.body-state3 .rocket,

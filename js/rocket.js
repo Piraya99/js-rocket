@@ -16,8 +16,7 @@ var changeState = function (state) {
       };
     },500);
   } else if (state == 3) {
-    var success = setTimeout(function ()
-      {
+    var success = setTimeout(function () {
         var randomNumber = Math.round(Math.random()*10);
 
         console.log('randomNumber:'+randomNumber)
